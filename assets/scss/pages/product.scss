@@ -1,0 +1,93 @@
+/* 產品圖片 */
+.product-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -4px;
+}
+.product-col{
+    width: calc(100%/12*6);
+    padding: 0 4px;
+
+}
+.product-color{
+    width: 64px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: $neutral-600;
+}
+.btn-product-size{
+    border-radius: 4px;
+    width: 160px;
+    border: 1px solid $neutral-300;
+    font-weight: 500;
+    padding: 12px 24px;   
+}
+.btn-product-size:hover{
+    border:  1px solid $neutral-900;
+    background-color: transparent;
+}
+.btn-product-size.active{
+    border: 1px solid $neutral-900;
+}
+.btn-light{
+    width: 259px;
+    border-radius: 4px;
+    border:  1px solid $neutral-900;
+    font-weight: 500;
+    background-color: transparent;
+}
+.btn-light:hover{
+    background-color: $neutral-900;
+    color: $neutral-0;
+}
+.btn-light :active{
+    color: $neutral-900;
+}
+
+.btn-light-sm{
+    width: 48px;
+    border-radius: 4px;
+    border:  1px solid $neutral-900;
+    font-weight: 500;
+    background-color: transparent;
+}
+.btn-black{
+    width: 259px;
+    border-radius: 4px;
+    border: 1px solid $neutral-900;
+    font-weight: 500;
+    background-color: $neutral-900;
+    color: $neutral-0;
+}
+.btn-black:hover{
+    background-color: $neutral-0;
+    color: $neutral-900;
+}
+@media(max-width:576px){
+    .btn-light{
+        width: 48px;
+    }
+    .btn-black{
+        width: 295px;
+    }
+
+}
+    /* object-fit: cover; */
+@media(max-width:768px){
+    .scroll{
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0 8px;
+}
+.mybelike-card{
+    flex: 0 0 auto;
+    width: 300px;
+    
+}
+
+}
+

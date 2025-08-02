@@ -1,0 +1,58 @@
+
+/* 頁面樣式 */
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.header{
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 152px 0;
+    text-align: center;
+}
+.en-tittle{
+    font-size: 28px;  
+}
+@media(max-width:768px){
+     .header{
+        padding: 87px 0;
+        background-image: url(../img/hero-sm.png);
+     }
+     .en-tittle{
+        font-size: 20px;
+     }
+    }
+.quote{
+    border-radius: 12px;
+    text-align: center;
+}
+@media(max-width:768px){
+    .quote{
+        text-align: left;
+    }
+}
+/* .intro img{
+    width: 1076px;
+    margin-right: -110px;
+    margin-left: -110px;    
+} */
+.section-line{
+    border-bottom: 1px solid $neutral-300;
+}
+.history-line{
+    border-left: 1px solid $neutral-900;
+}
+.history-list{
+    list-style-type: disc;
+    padding-left: 24px;
+
+}
+.idea-line{
+    border-left: 3px solid $neutral-300;
+    padding-left: 12px;
+}
+.bi{
+    vertical-align: bottom;
+}

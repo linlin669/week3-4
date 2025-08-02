@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product</title>
+  </head>
+  <body>
+    
+    <%- include("./layout/header.ejs")%>
+    <div class="d-none mb-md-24 d-md-block">
+        <img src="/assets/images/product.png" alt="鞋子商品照">
+    </div>
+    <main class="container py-64 py-md-0">
+        <div class="row">
+            <!-- 產品圖示 -->
+            <div class="col-7 d-md-none">
+                <div class="product-row">
+                    <div class="product-col mb-8 ">
+                        <img src="/assets/images/image.png" alt="鞋子商品照">
+                    </div>
+                    <div class="product-col mb-8">
+                        <img src="/assets/images/image-1.png" alt="鞋子商品照">
+                    </div>
+                    <div class="product-col mb-8">
+                        <img src="/assets/images/image-2.png" alt="鞋子商品照">
+                    </div>
+                    <div class="product-col mb-8">
+                        <img src="/assets/images/image-3.png" alt="鞋子商品照">
+                    </div>
+                    <div class="product-col mb-8">
+                        <img src="/assets/images/image-4.png" alt="鞋子商品照">
+                    </div>
+                    <div class="product-col mb-8">
+                        <img src="/assets/images/image-5.png" alt="鞋子商品照">
+                    </div>
+                    <div class="product-col">
+                        <img src="/assets/images/image-6.png" alt="鞋子商品照">
+                    </div>
+                    <div class="product-col">
+                        <img src="/assets/images/image-7.png" alt="鞋子商品照">
+                    </div>
+                </div>                
+            </div>
+            <!-- 產品描述 -->
+            <div class="col-5 col-md-4">
+                 <ol class="d-flex mb-12 mb-sm-8">
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">首頁</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">女鞋</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">滑板鞋</a></li>
+                    <li class="breadcrumb-item">Platform 404</li>
+                 </ol>
+                 <!-- 產品介紹 -->
+                 <h1 class="h2 mb-16 h4-md mb-md-12">Platform 404</h1>
+                 <p class="h5 text-primary-400 mb-16 h6-md mb-md-12">NT$2,600 <del class="text-sm text-neutral-500">NT$3,200</del></p>
+                 <p class="mb-12">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
+                 <p class="mb-32">鞋身選用柔軟皮革材質，打造出清新卻不失個性的氛圍，並以鞋面透氣孔設計提升穿著體驗，兼顧質感與舒適度，適合日常長時間著用。無論是街頭穿搭、日常通勤或週末出遊都能輕鬆駕馭。</p>
+                 <!-- 產品顏色 (產品顏色不算有序列表，使用ul，而不用ol)-->
+                 <div class="mb-32 mb-md-24">
+                    <h3 class="mb-8">顏色</h3>
+                  <div class="d-flex ">
+                    <div class="mb-4 me-8 product-color">
+                        <a href="#"><img src="/assets/images/product.png" alt="藍色鞋子"></a>
+                        <p>藍色</p>
+                    </div>
+                    <div class="mb-4 me-8 product-color">
+                        <a href="#"><img src="/assets/images/product-1.png" alt="卡其色鞋子"></a>
+                        <p>卡其色</p>
+                    </div>
+                  </div>
+                </div>
+                 <!-- 產品尺寸 -->
+                  <div class="mb-48 mb-md-24">
+                    <h3 class="mb-8">尺寸</h3>
+                    <div class="d-flex flex-wrap gap-8 mb-8">
+                     <button type="button" class="btn btn-product-size active">35(22.5cm)</button>
+                     <button type="button" class="btn btn-product-size">36(23.0cm)</button>
+                     <button type="button" class="btn btn-product-size">37(23.5cm)</button>
+                     <button type="button" class="btn btn-product-size">38(24.0cm)</button>
+                     <button type="button" class="btn btn-product-size">39(24.5cm)</button>
+                     <button type="button" class="btn btn-product-size">40(25.0cm)</button>
+                     <button type="button" class="btn btn-product-size">41(26.0cm)</button>
+                     <button type="button" class="btn btn-product-size" disabled>42(26.5cm)</button>
+                     <button type="button" class="btn btn-product-size" disabled>43(27.0cm)</button>
+                    </div>
+                    <p class="text-danger text-sm">僅剩 3 雙</p>                   
+                  </div>
+                  <!-- 收藏按鈕 -->
+                  <div class="d-flex mb-32 ">
+                    <button type="button" class="btn btn-light d-sm-none me-8"><i class="bi bi-heart me-8"></i>加入收藏</button>
+                    <button type="button" class="btn btn-black me-sm-8"><i class="bi bi-handbag me-8"></i>門市預約試穿</button>
+                    <button type="button" class="btn btn-light d-none d-sm-block "><i class="bi bi-heart me-8"></i></button>
+                  </div>
+
+                  <div class="py-12 setion-line">
+                    <h3 class="label-md mb-4 ">商品材質</h3>
+                    <p class="text-neutral-600">鞋面：合成皮革（Synthetic Leather）</p>
+                    <p class="text-neutral-600">內裡：透氣網布材質，提升舒適與排汗性</p>
+                    <p class="text-neutral-600">鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果</p>
+                    <p class="text-neutral-600">鞋帶：聚酯纖維，耐拉扯不易鬆脫</p>
+                  </div>
+                  <div class="py-12 setion-line">
+                    <h3 class="label-md mb-4">購買須知</h3>
+                    <p class="text-neutral-600">商品顏色因螢幕顯示可能略有差異，請以實品為準。</p>
+                    <p class="text-neutral-600">建議首次穿著前試穿確認尺寸，避免影響退換貨權益。</p>
+                    <p class="text-neutral-600">本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。</p>
+                  </div>
+                  <div class="py-12 setion-line">
+                    <h3 class="label-md mb-4">保養方式</h3>
+                    <p class="text-neutral-600">建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。</p>
+                    <p class="text-neutral-600">收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。</p>
+                    <p class="text-neutral-600">若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。</p>
+                  </div>                 
+            </div>
+        </div>
+    </main>
+    <!-- 可能喜歡導覽列 -->
+    <nav class="container d-flex flex-wrap py-48 py-md-40">
+        <h3 class="h4 mb-16">你可能也喜歡...</h3>
+        <div class="row d-md-none">                      
+                <div class="col-3 ">
+                    <a href="#">
+                        <img class="mb-12" src="/assets/images/product-2.png" alt="鞋子商品照">
+                        <h6 class="h6">VM001</h6>
+                        <p class="label-md">NT$2,600</p>
+                    </a>
+                </div>            
+                <div class="col-3">
+                    <a href="#">
+                        <img class="mb-12" src="/assets/images/product-3.png" alt="鞋子商品照">
+                        <h6 class="h6">Melty Kiss</h6>
+                        <p class="label-md">NT$4,000</p>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#">
+                        <img class="mb-12" src="/assets/images/product-4.png" alt="鞋子商品照">
+                        <h6 class="h6">BOOMBLOK</h6>
+                        <p class="label-md">NT$3,200</p>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#">
+                        <img class="mb-12" src="/assets/images/product-7.png" alt="鞋子商品照">
+                        <h6 class="h6">Sugar Snap</h6>
+                        <p class="label-md">NT$4,000</p>
+                    </a>
+                </div>
+        </div>
+        <div class="row d-none d-md-bolck scroll">                      
+                <div class="mybelike-card me-md-16">
+                    <a href="#">
+                        <img class="mb-12" src="/assets/images/product-2.png" alt="鞋子商品照">
+                        <h6 class="h6">VM001</h6>
+                        <p class="label-md">NT$2,600</p>
+                    </a>
+                </div>            
+                <div class="mybelike-card me-md-16">
+                    <a href="#">
+                        <img class="mb-12" src="/assets/images/product-3.png" alt="鞋子商品照">
+                        <h6 class="h6">Melty Kiss</h6>
+                        <p class="label-md">NT$4,000</p>
+                    </a>
+                </div>
+                <div class="mybelike-card me-md-16">
+                    <a href="#">
+                        <img class="mb-12" src="/assets/images/product-4.png" alt="鞋子商品照">
+                        <h6 class="h6">BOOMBLOK</h6>
+                        <p class="label-md">NT$3,200</p>
+                    </a>
+                </div>
+                <div class="mybelike-card">
+                    <a href="#">
+                        <img class="mb-12" src="/assets/images/product-7.png" alt="鞋子商品照">
+                        <h6 class="h6">Sugar Snap</h6>
+                        <p class="label-md">NT$4,000</p>
+                    </a>
+                </div>
+        </div>            
+    </nav>
+
+    <%- include("./layout/footer.ejs") %>
+ 
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
