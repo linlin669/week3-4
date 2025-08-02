@@ -1,0 +1,27 @@
+/* 元件 */
+/* ↓麵包屑導覽"偽元素" */
+.breadcrumb-item+.breadcrumb-item::before{
+    content:"/";
+    padding: 0 12px;
+    color: $neutral-300;
+}
+.breadcrumb-item{
+    display: flex;
+    font-weight: 500;
+}
+.breadcrumb-link{
+    color: $neutral-600;
+}
+@media(max-width:767px){
+    .breadcrumb-item+.breadcrumb-item::before{
+        padding: 0 8px;
+    }
+    .breadcrumb-item{
+        font-size: 14px;
+    }
+
+}
+/* 線 */
+.setion-line{
+    border-bottom: 1px solid $neutral-300;
+    }

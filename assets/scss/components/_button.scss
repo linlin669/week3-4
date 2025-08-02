@@ -1,0 +1,38 @@
+/* 按鈕 */
+/* font-family: inherit;繼承父層自行設定 */
+.btn{
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer;
+    background-color: transparent;
+    text-align: center;
+}
+@media(max-width:576px){
+    .btn{
+        padding: 8px 16px;
+    }
+}
+/* disabled通常不會有可點擊效果，設定pointer-events:none;禁止滑鼠相關事件 */
+.btn:disabled{
+    pointer-events:none;
+}
+.btn:hover{
+    background-color: $neutral-100;
+    font-weight: 500;  
+}
+.btn-dark{
+    
+    background-color: $neutral-900;
+    color: $neutral-0;
+}
+.btn-light{
+    border: 1px solid $neutral-900;
+}
+.btn-dark:hover{
+    background-color: $neutral-700;
+}
