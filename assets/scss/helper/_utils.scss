@@ -155,6 +155,16 @@
 .flex-wrap{
     flex-wrap: wrap;
 }
+.display-1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+@media(max-width:768px){
+    .display-md-1{
+        font-size: 48px;
+    }
+}
 .display-2{
     font-size: 48px;
     font-weight: 700;

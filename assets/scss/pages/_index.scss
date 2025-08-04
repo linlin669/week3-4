@@ -1,3 +1,19 @@
+.index-header {
+  background-image: url(../assets/images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 288px 0;
+}
+@media(max-width:768px){
+  .index-header {
+    background-image: url(../assets/images/banner-sm.png);
+    padding: 240px 24px;
+  }
+    
+
+}
 .product-card{
   position: relative;
   .product-text{
