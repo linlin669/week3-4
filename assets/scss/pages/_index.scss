@@ -8,12 +8,18 @@
   padding-left: 200px;
   
 }
+
 @media(max-width:768px){
   .index-header {
     background-image: url(/assets/images/banner-sm.png);
     padding: 240px 24px;
   }
-    
+  .index-phone-nav{
+    width: 50%;
+    color: $neutral-900;
+    text-align: center;
+  }
+
 
 }
 .product-card{
